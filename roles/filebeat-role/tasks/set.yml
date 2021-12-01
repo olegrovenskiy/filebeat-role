@@ -1,8 +1,8 @@
 ---
- - name: Set filebeat system work
-      become: true
-      command:
-        cmd: filebeat modules enable system
-        chdir: /usr/share/filebeat/bin
-      register: filebeat_modules
-      changed_when: filebeat_modules.stdout != 'Module system is already enabled'
+- name: Set filebeat system work
+  become: true
+  command:
+    cmd: filebeat modules enable system
+    chdir: /usr/share/filebeat/bin
+  register: filebeat_modules
+  changed_when: filebeat_modules.stdout != 'Module system is already enabled'

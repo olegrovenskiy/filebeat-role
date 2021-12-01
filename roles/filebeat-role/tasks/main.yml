@@ -5,4 +5,4 @@
 - import_tasks: set.yml
 - import_tasks: load.yml
 
-# tasks file for kibana-role
+# tasks file for filebeat-role
